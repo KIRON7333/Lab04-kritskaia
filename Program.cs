@@ -75,3 +75,33 @@ else
 {
     Console.WriteLine("Игрок 2 победил");
 }
+
+Console.Write("Введите число:    ");
+            int number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Число чётное");
+            }
+            else
+            {
+                Console.WriteLine("Число нечётное");
+            }
+
+Console.Write("Введите оценку(от 2 до 5):    ");
+            switch (grade)
+            {
+                case 5:
+                    Console.WriteLine("отлично♕");
+                    break;
+                case 4:
+                    Console.WriteLine("хорошо❈");
+                    break;
+                case 3:
+                    Console.WriteLine("удовлетворительно");
+                    break;
+                case 2:
+                    Console.WriteLine("неудовлетворительно☹");
+                    break;
+                default:
+                    Console.WriteLine("неверная оценка");
+                    break;
