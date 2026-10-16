@@ -52,3 +52,26 @@ else
 {
 Console.WriteLine("Пока нельзя");
 }
+Console.Write("игрок 1 вводит: К - Камень, Н - Ножницы, Б - Бумага:     ");
+string p1 = Console.ReadLine().Trim();
+
+Console.Write("игрок 2 вводит: К - Камень, Н - Ножницы, Б - Бумага:     ");
+string p2 = Console.ReadLine().Trim();
+
+if ((p1 != "К" && p1 != "Н" && p1 != "Б") || (p2 != "К" && p2 != "Н" && p2 != "Б"))
+{
+    Console.WriteLine("Ошибка ввода");
+}
+
+else if (p1 == p2)
+{
+    Console.WriteLine("Ничья");
+}
+else if ((p1 == "К" && p2 == "Н") || (p1 == "Н" && p2 == "Б") || (p1 == "Б" && p2 == "К"))
+{
+    Console.WriteLine("Игрок 1 победил");
+}
+else
+{
+    Console.WriteLine("Игрок 2 победил");
+}
